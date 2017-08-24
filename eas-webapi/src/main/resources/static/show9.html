@@ -1,0 +1,3184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>攻防采集分析系统9屏</title>
+    <link rel="stylesheet" href="css/common.css">
+    <!--<link rel="stylesheet" href="css/index.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/pagings.css"/>
+    <link rel="stylesheet" href="css/colorpicker/jquery.colorpicker.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="./css/bootstrap-table.css" />
+    <link rel="stylesheet" href="css/fen9.css">\
+    <link rel="stylesheet" href="css/public.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap-table.js"></script>
+    <script src="./js/bootstrap-table-export.js"></script>
+    <script src="./js/jquery.base64.js"></script>
+    <script src="./js/tableExport.js"></script>
+
+
+</head>
+<body>
+<div class="black index">
+    <div class="paginga">
+
+        <div class="popbut"><img src="img/button05.png" alt=""/>
+
+            <div class="pop">
+                <a href="show1.html">
+                    <div id="styleBoxa" class=" popBosa">
+                        <div class="layouta "></div>
+                    </div>
+                </a>
+                <a href="show2.html"> <div id="styleBoxb" class=" popBosb">
+                    <div class="layoutb "></div>
+                    <div class="layoutb "></div>
+                </div></a>
+
+                <a href="show4.html">
+                    <div id="styleBoxc" class=" popBosc">
+                        <div class="ml5 mt5 layoutc "></div>
+                        <div class="mt5 ml5 layoutc "></div>
+                        <div class=" ml5 mt2 layoutc "></div>
+                        <div class="ml5 mt2 layoutc "></div>
+                    </div>
+                </a>
+                <a href="show6.html">
+                    <div id="styleBoxd" class=" popBosd">
+                        <div class="ml5 mt5 layoutd "></div>
+                        <div class="mt5 ml5 layoutd "></div>
+                        <div class="mt5 ml5 layoutd "></div>
+                        <div class=" ml5 mt2 layoutd "></div>
+                        <div class="ml5 mt2 layoutd "></div>
+                        <div class="ml5 mt2 layoutd "></div>
+                    </div>
+                </a>
+
+                <a href="show9.html">
+                    <div id="styleBoxe" class=" popBose">
+                        <div class="ml5 mt5 layoute "></div>
+                        <div class="mt5 ml5 layoute "></div>
+                        <div class="mt5 ml5 layoute "></div>
+                        <div class=" ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="pagingimg"><h2>攻防采集分析系统</h2>
+
+        </div>
+
+    </div>
+    <!-- 分屏1-->
+
+    <div class="clear ml30 left ninesttle" id="ninesttle">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.11"  value="主机分布" name="myInput1" class="default nineWidth ninesttlezj" >
+                <ul id="nine_main" class="ul_change">
+                    <li data-value="192.16.32.11">192.16.32.11</li>
+                </ul>
+
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input name="myInput1" readonly="readonly" data-value="cpu" value="CPU" class="default nineop ninesttlezj" id="nine_type">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput1" class="default nineop ninesttlezj" id="nine_style">
+
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly"  data-value="Arial" value="宋体" name="myInput1" class="default nineop ninesttlezj" id="nine_font">
+
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input value="16"  data-value="16"  readonly="readonly" name="myInput1" class="default nineop ninesttlezj" id="nine_size">
+
+                    <ul>
+                        <li data-value="16">16</li>
+                        <li data-value="20">20</li>
+                        <li data-value="24">24</li>
+                        <li data-value="28">28</li>
+                        <li data-value="32">32</li>
+
+
+                    </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker1">
+                <div></div>
+            </div>
+        </div>
+        <div id="operation1" >
+            <div id="show1" style="width:400px;height:250px"></div>
+            <table id="table_show1"></table>
+        </div>
+
+
+    </div>
+
+    <!-- 分屏2-->
+
+    <div class="clear ml left ninesttleb" id="ninesttle2">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.12"  value="主机分布"name="myInput2" class="default nineWidth ninesttlezj" >
+
+                <ul class="ul_change" id="nine_main2">
+                    <li data-value="192.16.32.12">192.16.32.12</li>
+                </ul>
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly" data-value="cpu"  value="CPU" name="myInput2" class="default nineop ninesttlezj" id="nine_type2">
+
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80">
+
+                <input readonly="readonly" data-value="line" value="折线图"  name="myInput2" class="default nineop ninesttlezj" id="nine_style2">
+
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly" data-value="Arial" value="宋体"  name="myInput2" class="default nineop ninesttlezj" id="nine_font2">
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input readonly="readonly" data-value="16" value="16" name="myInput2" class="default nineop ninesttlezj" id="nine_size2">
+
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker2">
+                <div></div>
+            </div>
+        </div>
+        <div id="operation2" >
+            <div  id="show2" style="width:400px;height:250px"></div>
+            <table id="table_show2"></table>
+        </div>
+
+
+
+
+    </div>
+    <!-- 分屏3-->
+
+    <div class="clear ml left ninesttlec" id="ninesttle3">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.13" value="主机分布" name="myInput3" class="default nineWidth ninesttlezj" >
+
+
+                <ul class="ul_change" id="nine_main3" >
+                    <li data-value="192.16.32.13">192.16.32.13</li>
+                </ul>
+
+
+                </input>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="cpu" value="CPU" name="myInput3" class="default nineop ninesttlezj" id="nine_type3">
+
+                    <ul>
+                        <li data-value="cpu">CPU</li>
+                        <li data-value="memory">内存</li>
+                        <li data-value="disk">磁盘</li>
+                        <li data-value="net">网络流量</li>
+                        <li data-value="1">终端信息</li>
+                        <li data-value="2">系统基础</li>
+                        <li data-value="3">网络连接</li>
+                        <li data-value="4">文件操作</li>
+                        <li data-value="5">应用进程</li>
+                        <li data-value="6">web应用</li>
+                        <li data-value="7">邮件行为</li>
+                        <li data-value="8">文件传输</li>
+                        <li data-value="9">网卡信息</li>
+
+                    </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="line"  value="折线图" name="myInput3" class="default nineop ninesttlezj" id="nine_style3">
+
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="Arial" value="宋体" name="myInput3" class="default nineop ninesttlezj" id="nine_font3">
+                    <ul>
+
+                        <!--<option value="C1">字体 </option>-->
+
+                        <li data-value="Arial">宋体</li>
+                        <li data-value="YaHei">微软雅黑</li>
+                        <li data-value="SimHei">黑体</li>
+                    </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+            <div class="box_left box80">
+                <input value="16" data-value="16"  readonly="readonly" name="myInput3" class="default nineop ninesttlezj" id="nine_size3">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker3">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="operation3">
+            <div id="show3" style="width:400px;height:250px"></div>
+            <table id="table_show3"></table>
+        </div>
+
+
+    </div>
+
+    <!-- 分屏4-->
+
+    <div class="clear ml30 mt left ninesttld" id="ninesttle4">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.14" value="主机分布" name="myInput4" class="default nineWidth ninesttlezj" >
+                <ul id="nine_main4" class="ul_change">
+                    <li data-value="192.16.32.14">192.16.32.14</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly"  data-value="cpu" value="CPU" name="myInput4" class="default nineop ninesttlezj" >
+                <ul class="ul_change" id="nine_type4" >
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input name="myInput4" readonly="readonly"  data-value="line"  value="折线图" class="default nineop ninesttlezj" id="nine_style4">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly"  data-value="Arial" value="宋体"  name="myInput4" class="default nineop ninesttlezj" id="nine_font4">
+
+                <ul>
+
+                    <!--<option value="C1">字体 </option>-->
+
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input value="16"  data-value="16"  readonly="readonly" name="myInput4" class="default nineop ninesttlezj" id="nine_size4">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker4">
+                <div></div>
+            </div>
+        </div>
+
+        <div id="operation4">
+            <div id="show4" style="width:400px;height:250px"></div>
+            <table id="table_show4"></table>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- 分屏5-->
+
+    <div class="clear ml mt left ninesttld" id="ninesttle5">
+        <div class="fields ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.15"  value="主机分布"  name="myInput5" class="default nineWidth ninesttlezj" >
+                <ul class="ul_change" id="nine_main5">
+                    <li data-value="192.16.32.15">192.16.32.15</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" value="CPU" data-value="cpu" name="myInput5" class="default nineop ninesttlezj" id="nine_type5">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput5" class="default nineop ninesttlezj" id="nine_style5">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="Arial" value="宋体" name="myInput5" class="default nineop ninesttlezj" id="nine_font5">
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly" data-value="16" value="16" name="myInput5" class="default nineop ninesttlezj" id="nine_size5">
+
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker5">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div id="operation5" >
+            <div id="show5" style="width:400px;height:250px"></div>
+            <table id="table_show5"></table>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- 分屏6-->
+
+    <div class="clear ml mt left ninesttld" id="ninesttle6">
+        <div class="fields ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.16" value="主机分布" name="myInput6" class="default nineWidth ninesttlezj" >
+
+                <ul id="nine_main6" class="ul_change" >
+                    <li data-value="192.16.32.16">192.16.32.16</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="cpu" value="CPU" name="myInput6" class="default nineop ninesttlezj" id="nine_type6">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" value="折线图" data-value="line"  name="myInput6" class="default nineop ninesttlezj" id="nine_style6">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="Arial"  value="宋体" name="myInput6" class="default nineop ninesttlezj" id="nine_font6">
+                <ul>
+
+                    <!--<option value="C1">字体 </option>-->
+
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input value="16" data-value="16"  readonly="readonly" name="myInput6" class="default nineop ninesttlezj" id="nine_size6">
+                    <ul>
+                        <li data-value="16">16</li>
+                        <li data-value="20">20</li>
+                        <li data-value="24">24</li>
+                        <li data-value="28">28</li>
+                        <li data-value="32">32</li>
+
+                    </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker6">
+                <div></div>
+            </div>
+        </div>
+
+
+
+        <div id="operation6">
+            <div id="show6" style="width:400px;height:250px"></div>
+            <table id="table_show6"></table>
+        </div>
+
+
+    </div>
+
+
+    <!-- 分屏7-->
+
+    <div class="clear ml30 mt left ninesttld" id="ninesttle7">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.17" value="主机分布"  name="myInput7" class="default nineWidth ninesttlezj" >
+                <ul class="ul_change" id="nine_main7">
+                    <li data-value="192.16.32.17">192.16.32.17</li>
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input  readonly="readonly" data-value="cpu" value="CPU" name="myInput7" class="default nineop ninesttlezj" id="nine_type7">
+
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput7" class="default nineop ninesttlezj" id="nine_style7">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="Arial" value="宋体" name="myInput7" class="default nineop ninesttlezj" id="nine_font7">
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly"  data-value="16"   value="16" name="myInput7" class="default nineop ninesttlezj" id="nine_size7">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker7">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div id="operation7" >
+            <div  id="show7" style="width:400px;height:250px"></div>
+            <table id="table_show7"></table>
+        </div>
+
+
+    </div>
+
+
+    <!-- 分屏8-->
+
+    <div class="clear ml mt left ninesttld" id="ninesttle8">
+        <div class="fields ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.18" value="主机分布" name="myInput8" class="default nineWidth ninesttlezj" >
+
+
+                <ul class="ul_change" id="nine_main8">
+                    <li data-value="192.16.32.18">192.16.32.18</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80">
+
+                <input readonly="readonly" data-value="cpu" value="CPU" name="myInput8" class="default nineop ninesttlezj" id="nine_type8">
+
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left box80 ">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput8" class="default nineop ninesttlezj" id="nine_style8">
+
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input readonly="readonly" data-value="Arial" value="宋体" name="myInput8" class="default nineop ninesttlezj" id="nine_font8">
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input value="16"  data-value="16" readonly="readonly"  name="myInput8" class="default nineop ninesttlezj" id="nine_size8">
+
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker8">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div id="operation8">
+            <div id="show8" style="width:400px;height:250px"></div>
+            <table id="table_show8"></table>
+        </div>
+
+
+    </div>
+
+
+    <!-- 分屏9-->
+    <div class="clear ml mt left ninesttld" id="ninesttle9">
+        <div class="fields  ml30 nineRevise btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly"  data-value="192.16.32.19" value="主机分布" name="myInput9" class="default nineWidth ninesttlezj" >
+
+
+                <ul id="nine_main9" class="ul_change">
+                    <li data-value="192.16.32.19">192.16.32.19</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="cpu" value="CPU" name="myInput9" class="default nineop ninesttlezj" >
+
+                <ul class="ul_change" id="nine_type9">
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input readonly="readonly"  data-value="line" value="折线图"  name="myInput9" class="default nineop ninesttlezj" id="nine_style9">
+
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input readonly="readonly" data-value="Arial"  value="折线图"  name="myInput9" class="default nineop ninesttlezj" id="nine_font9">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <div class="fields ninesttlezj ml12 ninebj btn-group">
+
+
+            <div class="box_left  box80 ">
+
+                <input value="16"  data-value="16"   readonly="readonly" name="myInput9" class="default nineop ninesttlezj" id="nine_size9">
+
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+
+                </ul>
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+
+
+        <div class=" ml12 mt22 colors btn-group">
+            <div id="colorPicker9">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div id="operation9">
+            <div id="show9" style="width:400px;height:250px;margin-left: 100px"></div>
+            <table id="table_show9"></table>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+</body>
+
+<script src="js/jquery.colorpicker.min.js"></script>
+<script src="js/echarts.js"></script>
+
+<script type="text/javascript" src="js/show.js"></script>
+<script src="js/data.js"></script>
+
+<script>
+
+    function sele(ele) {
+
+        $("." + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+                    console.log($(this).find("input").val());
+
+//                    console.log($(this).find("input").val(("data-value")))
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+                }
+                $(this).find("ul").hide();
+            }
+        })
+    }
+    sele("box")
+    sele("box_left")
+
+
+    /*
+     * 切换颜色*/
+    $('#colorPicker1').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker1 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show1.color="#"+hex;
+            var show_Chart =map_chart[show1.ElementId];
+            onLoad(show1,show_Chart)
+        }
+    });
+    $('#colorPicker2').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker2 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show2.color="#"+hex;
+            var show_Chart =map_chart[show2.ElementId];
+            onLoad(show2,show_Chart)
+        }
+    });
+    $('#colorPicker3').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker3 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show3.color="#"+hex;
+            var show_Chart =map_chart[show3.ElementId];
+            onLoad(show3,show_Chart)
+        }
+    });
+    $('#colorPicker4').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker4 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show4.color="#"+hex;
+            var show_Chart =map_chart[show4.ElementId];
+            onLoad(show4,show_Chart)
+        }
+    });
+
+    $('#colorPicker5').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker5 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show5.color="#"+hex;
+            var show_Chart =map_chart[show5.ElementId];
+            onLoad(show5,show_Chart)
+        }
+    });
+
+    $('#colorPicker6').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker6 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show6.color="#"+hex;
+            var show_Chart =map_chart[show6.ElementId];
+            onLoad(show6,show_Chart)
+        }
+    });
+
+    $('#colorPicker7').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker7 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show7.color="#"+hex;
+            var show_Chart =map_chart[show7.ElementId];
+            onLoad(show7,show_Chart)
+        }
+    });
+    $('#colorPicker8').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker8 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show8.color="#"+hex;
+            var show_Chart =map_chart[show8.ElementId];
+            onLoad(show8,show_Chart)
+        }
+    });
+
+    $('#colorPicker9').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker9 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show9.color="#"+hex;
+            var show_Chart =map_chart[show9.ElementId];
+            onLoad(show9,show_Chart)
+        }
+    });
+
+
+    //初始化参数
+    var show1=new MyParameter();
+    show1.ElementId='show1';  //设置展示模块的ID
+    show1.ip="192.168.2.1";
+    show1.dataType = "cpu";//cpu,memory,disk
+    show1.showType = "line";//line,bar,pie
+    show1.fontFamily = "Arial";
+    show1.fontSize= "20";
+    show1.color="#FFFFFF";
+
+
+
+    //初始化参数
+    var show2=new MyParameter();
+    show2.ElementId='show2';  //设置展示模块的ID
+    show2.ip="192.168.2.1";
+    show2.dataType = "cpu";//cpu,memory,disk
+    show2.showType = "line";//line,bar,pie
+    show2.fontFamily = "Arial";
+    show2.fontSize= "20";
+    show2.color="#FFFFFF";
+
+    //初始化参数
+    var show3=new MyParameter();
+    show3.ElementId='show3';  //设置展示模块的ID
+    show3.ip="192.168.2.1";
+    show3.dataType = "cpu";//cpu,memory,disk
+    show3.showType = "line";//line,bar,pie
+    show3.fontFamily = "Arial";
+    show3.fontSize= "20";
+    show3.color="#FFFFFF";
+
+    //初始化参数
+    var show4=new MyParameter();
+    show4.ElementId='show4';  //设置展示模块的ID
+    show4.ip="192.168.2.1";
+    show4.dataType = "cpu";//cpu,memory,disk
+    show4.showType = "line";//line,bar,pie
+    show4.fontFamily = "Arial";
+    show4.fontSize= "20";
+    show4.color="#FFFFFF";
+
+
+    //初始化参数
+    var show5=new MyParameter();
+    show5.ElementId='show5';  //设置展示模块的ID
+    show5.ip="192.168.2.1";
+    show5.dataType = "cpu";//cpu,memory,disk
+    show5.showType = "line";//line,bar,pie
+    show5.fontFamily = "Arial";
+    show5.fontSize= "20";
+    show5.color="#FFFFFF";
+
+    //初始化参数
+    var show6=new MyParameter();
+    show6.ElementId='show6';  //设置展示模块的ID
+    show6.ip="192.168.2.1";
+    show6.dataType = "cpu";//cpu,memory,disk
+    show6.showType = "line";//line,bar,pie
+    show6.fontFamily = "Arial";
+    show6.fontSize= "20";
+    show6.color="#FFFFFF";
+
+    //初始化参数
+    var show7=new MyParameter();
+    show7.ElementId='show7';  //设置展示模块的ID
+    show7.ip="192.168.2.1";
+    show7.dataType = "cpu";//cpu,memory,disk
+    show7.showType = "line";//line,bar,pie
+    show7.fontFamily = "Arial";
+    show7.fontSize= "20";
+    show7.color="#FFFFFF";
+
+    //初始化参数
+    var show8=new MyParameter();
+    show8.ElementId='show8';  //设置展示模块的ID
+    show8.ip="192.168.2.1";
+    show8.dataType = "cpu";//cpu,memory,disk
+    show8.showType = "line";//line,bar,pie
+    show8.fontFamily = "Arial";
+    show8.fontSize= "20";
+    show8.color="#FFFFFF";
+
+    //初始化参数
+    var show9=new MyParameter();
+    show9.ElementId='show9';  //设置展示模块的ID
+    show9.ip="192.168.2.1";
+    show9.dataType = "cpu";//cpu,memory,disk
+    show9.showType = "line";//line,bar,pie
+    show9.fontFamily = "Arial";
+    show9.fontSize= "20";
+    show9.color="#FFFFFF";
+
+
+
+    //数据加载
+    getSetServer (["nine_main","nine_main2","nine_main3","nine_main4","nine_main5","nine_main6","nine_main7","nine_main8","nine_main9"]);
+    //获取第一个IP
+    show1.ip=$("#nine_main li:first").attr("data-value");
+    show2.ip=$("#nine_main2 li:first").attr("data-value");
+    show3.ip=$("#nine_main3 li:first").attr("data-value");
+    show4.ip=$("#nine_main4 li:first").attr("data-value");
+    show5.ip=$("#nine_main5 li:first").attr("data-value");
+    show6.ip=$("#nine_main6 li:first").attr("data-value");
+    show7.ip=$("#nine_main7 li:first").attr("data-value");
+    show8.ip=$("#nine_main8 li:first").attr("data-value");
+    show9.ip=$("#nine_main9 li:first").attr("data-value");
+
+
+    if(show1.ip){
+        loadChart(show1);
+    }
+     if(show2.ip){
+        loadChart(show2);
+    }
+    if(show3.ip){
+        loadChart(show3);
+    }
+    if(show4.ip){
+        loadChart(show4);
+    }
+    if(show5.ip){
+        loadChart(show5);
+    }
+    if(show6.ip){
+        loadChart(show6);
+    }
+    if(show7.ip){
+        loadChart(show7);
+    }
+    if(show8.ip){
+        loadChart(show8);
+    }
+    if(show9.ip){
+        loadChart(show9);
+    }
+
+
+    var table={};
+    table["height"]=200;
+    table["pagination"]=false;
+    table["search"]=false;
+    table["showColumns"]=false;
+    table["showRefresh"]=false;
+    table["showExport"]=false;
+
+
+
+
+    ///每次获取值
+
+    var compaer_a
+    function compare() {
+
+        compaer_a=[];
+        $("#ninesttle  input[name=myInput1]").each(function () {
+
+            var ary_a= ($(this).attr("data-value"))
+
+            compaer_a.push(ary_a)
+
+        });
+
+        console.log(compaer_a)
+
+    }
+    compare()
+
+    var compaer_b
+
+    function compareb() {
+        compaer_b=[];
+
+        $("#ninesttle2  input[name=myInput2]").each(function () {
+
+            var ary_b= ($(this).attr("data-value"))
+
+            compaer_b.push(ary_b)
+
+        });
+
+        console.log(compaer_b)
+    }
+    compareb()
+
+
+
+    var compaer_c
+
+    function comparec() {
+        compaer_c=[];
+
+        $("#ninesttle3  input[name=myInput3]").each(function () {
+
+            var ary_c= ($(this).attr("data-value"))
+
+            compaer_c.push(ary_c)
+
+        });
+
+        console.log(compaer_c)
+    }
+    comparec()
+
+
+    function compared() {
+        compaer_d=[];
+
+        $("#ninesttle4  input[name=myInput4]").each(function () {
+
+            var ary_d= ($(this).attr("data-value"))
+
+            compaer_d.push(ary_d)
+
+        });
+
+        console.log(compaer_d)
+    }
+    compared()
+
+
+    function comparee() {
+        compaer_e=[];
+
+        $("#ninesttle5  input[name=myInput5]").each(function () {
+
+            var ary_e= ($(this).attr("data-value"))
+
+            compaer_e.push(ary_e)
+
+        });
+
+        console.log(compaer_e)
+    }
+    comparee()
+
+
+
+
+    function comparef() {
+        compaer_f=[];
+
+        $("#ninesttle6  input[name=myInput6]").each(function () {
+
+            var ary_f= ($(this).attr("data-value"))
+
+            compaer_f.push(ary_f)
+
+        });
+
+        console.log(compaer_f)
+    }
+    comparef()
+
+
+    function compareg() {
+        compaer_g=[];
+
+        $("#ninesttle7  input[name=myInput7]").each(function () {
+
+            var ary_g= ($(this).attr("data-value"))
+
+            compaer_g.push(ary_g)
+
+        });
+
+        console.log(compaer_g)
+    }
+    compareg()
+
+
+
+    function compareh() {
+        compaer_h=[];
+
+        $("#ninesttle8  input[name=myInput8]").each(function () {
+
+            var ary_h= ($(this).attr("data-value"))
+
+            compaer_h.push(ary_h)
+
+        });
+
+        console.log(compaer_h)
+    }
+    compareh()
+
+
+    function comparei() {
+        compaer_i=[];
+
+        $("#ninesttle9  input[name=myInput9]").each(function () {
+
+            var ary_i= ($(this).attr("data-value"))
+
+            compaer_i.push(ary_i)
+
+        });
+
+        console.log(compaer_i)
+    }
+    comparei()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //    模板1
+
+    function sele(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+
+
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model1()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele("ninesttle .box")
+    sele("ninesttle .box_left")
+
+
+    function model1(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput1]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput1]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput1]").length)
+        console.log($("input[name=myInput1]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show1.ip = arr[0];
+        console.log( show1.ip);
+        show1.dataType = arr[1];//cpu,memory,disk
+        show1.showType = arr[2];//line,bar,pie
+        show1.fontFamily = arr[3];
+        show1.fontSize = arr[4];
+        show1.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show1, table);
+    }
+
+
+    //    模板2
+
+    function sele2(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model2()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele2("ninesttle2 .box")
+    sele2("ninesttle2 .box_left")
+
+
+    function model2(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput2]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput2]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput2]").length)
+        console.log($("input[name=myInput2]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show2.ip = arr[0];
+        console.log( show1.ip);
+        show2.dataType = arr[1];//cpu,memory,disk
+        show2.showType = arr[2];//line,bar,pie
+        show2.fontFamily = arr[3];
+        show2.fontSize = arr[4];
+        show2.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show2, table);
+    }
+
+    //    模板3
+    function sele3(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model3()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele3("ninesttle3 .box")
+    sele3("ninesttle3 .box_left")
+
+
+    function model3(){
+
+        var options=[]
+        $("input[name=myInput3]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput3]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput3]").length)
+        console.log($("input[name=myInput3]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show3.ip = arr[0];
+
+        show3.dataType = arr[1];//cpu,memory,disk
+        show3.showType = arr[2];//line,bar,pie
+        show3.fontFamily = arr[3];
+        show3.fontSize = arr[4];
+        show3.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show3, table);
+    }
+
+
+    //    模板4
+    function sele4(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model4()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele4("ninesttle4 .box")
+    sele4("ninesttle4 .box_left")
+
+
+    function model4(){
+
+        var options=[]
+        $("input[name=myInput4]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput4]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput4]").length)
+        console.log($("input[name=myInput4]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show4.ip = arr[0];
+        console.log( show1.ip);
+        show4.dataType = arr[1];//cpu,memory,disk
+        show4.showType = arr[2];//line,bar,pie
+        show4.fontFamily = arr[3];
+        show4.fontSize = arr[4];
+        show4.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show4, table);
+    }
+
+
+    //    模板5
+    function sele5(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model5()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele5("ninesttle5 .box")
+    sele5("ninesttle5 .box_left")
+
+
+    function model5(){
+        var options=[]
+        $("input[name=myInput5]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput5]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput5]").length)
+        console.log($("input[name=myInput5]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show5.ip = arr[0];
+        console.log( show1.ip);
+        show5.dataType = arr[1];//cpu,memory,disk
+        show5.showType = arr[2];//line,bar,pie
+        show5.fontFamily = arr[3];
+        show5.fontSize = arr[4];
+        show5.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show5, table);
+    }
+
+
+    //    模板6
+
+    function sele6(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model6()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele6("ninesttle6 .box")
+    sele6("ninesttle6 .box_left")
+
+
+    function model6(){
+
+        var options=[]
+        $("input[name=myInput6]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput6]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput6]").length)
+        console.log($("input[name=myInput6]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show6.ip = arr[0];
+        console.log( show1.ip);
+        show6.dataType = arr[1];//cpu,memory,disk
+        show6.showType = arr[2];//line,bar,pie
+        show6.fontFamily = arr[3];
+        show6.fontSize = arr[4];
+        show6.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show6, table);
+    }
+
+
+    //    模板7
+
+    function sele7(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model7()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele7("ninesttle7 .box")
+    sele7("ninesttle7 .box_left")
+
+
+    function model7(){
+
+        var options=[]
+        $("input[name=myInput7]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput7]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput7]").length)
+        console.log($("input[name=myInput7]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show7.ip = arr[0];
+
+        show7.dataType = arr[1];//cpu,memory,disk
+        show7.showType = arr[2];//line,bar,pie
+        show7.fontFamily = arr[3];
+        show7.fontSize = arr[4];
+        show7.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show7, table);
+    }
+
+
+
+
+    //    模板8
+
+    function sele8(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model8()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele8("ninesttle8 .box")
+    sele8("ninesttle8 .box_left")
+
+
+    function model8(){
+
+        var options=[]
+        $("input[name=myInput8]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput8]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput8]").length)
+        console.log($("input[name=myInput8]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show8.ip = arr[0];
+
+        show8.dataType = arr[1];//cpu,memory,disk
+        show8.showType = arr[2];//line,bar,pie
+        show8.fontFamily = arr[3];
+        show8.fontSize = arr[4];
+        show8.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show8, table);
+    }
+
+
+
+    //    模板9
+
+    function sele9(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    comparee()
+                    comparef()
+                    compareg()
+                    compareh()
+                    comparei()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_e[0])&&(compaer_a[2]===compaer_e[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_f[0])&&(compaer_a[2]===compaer_f[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_g[0])&&(compaer_a[2]===compaer_g[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_h[0])&&(compaer_a[2]===compaer_h[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_i[0])&&(compaer_a[2]===compaer_i[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_e[0])&&(compaer_b[2]===compaer_e[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_f[0])&&(compaer_b[2]===compaer_f[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_g[0])&&(compaer_b[2]===compaer_g[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_h[0])&&(compaer_b[2]===compaer_h[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_i[0])&&(compaer_b[2]===compaer_i[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_e[0])&&(compaer_c[2]===compaer_e[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_f[0])&&(compaer_c[2]===compaer_f[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_g[0])&&(compaer_c[2]===compaer_g[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_h[0])&&(compaer_c[2]===compaer_h[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_i[0])&&(compaer_c[2]===compaer_i[2])&&(compaer_c[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_e[0])&&(compaer_d[2]===compaer_e[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_f[0])&&(compaer_d[2]===compaer_f[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_g[0])&&(compaer_d[2]===compaer_g[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_h[0])&&(compaer_d[2]===compaer_h[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_d[0]===compaer_i[0])&&(compaer_d[2]===compaer_i[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_f[0])&&(compaer_e[2]===compaer_f[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_g[0])&&(compaer_e[2]===compaer_g[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_h[0])&&(compaer_e[2]===compaer_h[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_e[0]===compaer_i[0])&&(compaer_e[2]===compaer_i[2])&&(compaer_e[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_g[0])&&(compaer_f[2]===compaer_g[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_h[0])&&(compaer_f[2]===compaer_h[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_f[0]===compaer_i[0])&&(compaer_f[2]===compaer_i[2])&&(compaer_f[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_h[0])&&(compaer_g[2]===compaer_h[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_g[0]===compaer_i[0])&&(compaer_g[2]===compaer_i[2])&&(compaer_g[2]==="monitor"))||
+                            ((compaer_h[0]===compaer_i[0])&&(compaer_h[2]===compaer_i[2])&&(compaer_h[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+
+
+
+
+
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+//
+//
+//                    console.log($(this).find("input").attr("data-value"));
+//                    console.log(changr_numder);
+//                    console.log($(event.target).attr("data-value"));
+
+//                   (this).find("input").val($(event.target).attr("data-value"));  传属性值
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model9()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele9("ninesttle9 .box")
+    sele9("ninesttle9 .box_left")
+
+
+    function model9(){
+
+        var options=[]
+        $("input[name=myInput9]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+        console.log(options)
+        var index = $("input[name=myInput9]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+        console.log($("input[name=myInput9]").length)
+        console.log($("input[name=myInput9]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show9.ip = arr[0];
+
+        show9.dataType = arr[1];//cpu,memory,disk
+        show9.showType = arr[2];//line,bar,pie
+        show9.fontFamily = arr[3];
+        show9.fontSize = arr[4];
+        show9.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show9, table);
+    }
+
+
+
+
+</script>
+
+
+</html>

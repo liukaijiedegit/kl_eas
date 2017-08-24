@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>攻防采集分析系统4屏</title>
+    <link rel="stylesheet" href="css/common.css">
+    <!--<link rel="stylesheet" href="css/index.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/pagings.css"/>
+    <link rel="stylesheet" href="css/colorpicker/jquery.colorpicker.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap-table.css" />
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap-table.js"></script>
+    <script src="./js/bootstrap-table-export.js"></script>
+    <script src="./js/jquery.base64.js"></script>
+    <script src="./js/tableExport.js"></script>
+
+</head>
+<body>
+<div class="black index">
+    <div class=" clear paginga">
+        <div class="popbut"><img src="img/button05.png" alt=""/>
+            <div class="pop">
+                <a href="show1.html">
+                    <div id="styleBoxa" class=" popBosa">
+                        <div class="layouta "></div>
+                    </div>
+                </a>
+                <a href="show2.html"> <div id="styleBoxb" class=" popBosb">
+                    <div class="layoutb "></div>
+                    <div class="layoutb "></div>
+                </div></a>
+
+                <a href="show4.html">
+                    <div id="styleBoxc" class=" popBosc">
+                        <div class="ml5 mt5 layoutc "></div>
+                        <div class="mt5 ml5 layoutc "></div>
+                        <div class=" ml5 mt2 layoutc "></div>
+                        <div class="ml5 mt2 layoutc "></div>
+                    </div>
+                </a>
+                <a href="show6.html">
+                    <div id="styleBoxd" class=" popBosd">
+                        <div class="ml5 mt5 layoutd "></div>
+                        <div class="mt5 ml5 layoutd "></div>
+                        <div class="mt5 ml5 layoutd "></div>
+                        <div class=" ml5 mt2 layoutd "></div>
+                        <div class="ml5 mt2 layoutd "></div>
+                        <div class="ml5 mt2 layoutd "></div>
+                    </div>
+                </a>
+
+                <a href="show9.html">
+                    <div id="styleBoxe" class=" popBose">
+                        <div class="ml5 mt5 layoute "></div>
+                        <div class="mt5 ml5 layoute "></div>
+                        <div class="mt5 ml5 layoute "></div>
+                        <div class=" ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                        <div class="ml5 mt2 layoute "></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="clear pagingimg"><h2>攻防采集分析系统</h2>
+
+
+        </div>
+
+    </div>
+    <!-- 分屏1-->
+
+    <div class=" clear" id="styleSinglea">
+        <div class="fields ml45 revisewWidth btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.11" value="主机分布"  type="text"  name="myInput1" class="default revise" >
+                <ul class="ul_change" id="master1">
+                    <li data-value="192.16.32.11">192.16.32.11</li>
+                </ul>
+
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <!--主机分布-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="cpu" value="CPU" type="text" name="myInput1" id="ms1" class="default">
+                <ul class="ul_change">
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa " aria-hidden="true"></i>
+            </div>
+
+        </div>
+        <!--数据类型-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput1" class="default " id="changepicturea">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+
+        </div>
+        <!--样式-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input readonly="readonly" name="myInput1" data-value="Arial"  value="宋体"  class="default " id="changeFonta">
+
+
+                <!--<option value="C1">字体 </option>-->
+
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <!--字体-->
+
+        <div class=" ml14 mt45  btn-group">字号</div>
+
+        <div class="fields ml6 bg02 btn-group">
+
+            <div class="box_left box75 ">
+
+                <input readonly="readonly" name="myInput1" value="16" class="default width75" data-value="16"  id="fontsa">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+                </ul>
+
+
+                <!--<i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>-->
+
+
+            </div>
+
+        </div>
+        <!--字号-->
+        <div class=" ml16 mt45  btn-group">颜色</div>
+        <div class=" ml5 mt45 btn-group">
+
+        </div>
+
+        <div class=" ml5 mt45 colors btn-group">
+            <div id="colorPicker1">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div class="font-g" id="operation1">
+
+            <div class="picture mainb ml100 mt10 picture-d" id="show1" style="width: 700px;height:400px;"></div>
+            <table id="table_show1"></table>
+
+        </div>
+
+
+    </div>
+    <!---->
+
+
+    <!-- 分屏2-->
+    <div class=" clear" id="styleSingleb">
+        <div class="fields ml45 revisewWidth btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.12" value="主机分布"  type="text"  name="myInput2" class="default revise" >
+                <ul class="ul_change"  id="master2">
+                    <li data-value="192.16.32.12">192.16.32.12</li>
+                </ul>
+
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <!--主机分布-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="cpu" value="CPU"  type="text" name="myInput2" id="ms2" class="default">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa " aria-hidden="true"></i>
+            </div>
+
+
+        </div>
+        <!--数据类型-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput2" class="default " id="changepicturea2">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <!--样式-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input readonly="readonly" name="myInput2"  data-value="Arial" value="宋体"  class="default " id="changeFonta2">
+
+
+                <!--<option value="C1">字体 </option>-->
+
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <!--字体-->
+
+        <!--行高-->
+        <div class=" ml14 mt45  btn-group">字号</div>
+
+        <div class="fields ml6 bg02 btn-group">
+            <div class="box_left  box75 ">
+
+                <input readonly="readonly" name="myInput2" data-value="16"  value="16" class="default width75" id="fontsa2">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+                </ul>
+
+
+                <!--<i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>-->
+
+
+            </div>
+
+
+        </div>
+        <!--字号-->
+        <div class=" ml16 mt45  btn-group">颜色</div>
+        <div class=" ml5 mt45 colors btn-group">
+            <div id="colorPicker2">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div class="font-g" id="operation2">
+
+
+            <div class="picture mainb ml100 mt10 picture-d" id="show2" style="width: 700px;height:400px;"></div>
+            <table id="table_show2"></table>
+        </div>
+
+
+    </div>
+
+
+    <!-- 分屏3-->
+    <div class="clear" id="styleSinglec">
+
+
+        <div class="fields ml45 revisewWidth btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.13" value="主机分布"  type="text"  name="myInput3" class="default revise" >
+                <ul class="ul_change" id="master3" >
+                    <li data-value="192.16.32.13">192.16.32.13</li>
+                </ul>
+
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <!--主机分布-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="cpu" value="CPU"  type="text" name="myInput3" id="ms3" class="default">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa " aria-hidden="true"></i>
+            </div>
+
+
+        </div>
+        <!--数据类型-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="line" value="折线图" name="myInput3" class="default " id="changepicturea3">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+
+                </ul>
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <!--样式-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input name="myInput3" data-value="Arial" value="宋体" readonly="readonly"  class="default " id="changeFonta3">
+                <ul>
+
+                    <!--<option value="C1">字体 </option>-->
+
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <!--字体-->
+
+        <!--行高-->
+        <div class=" ml14 mt45  btn-group">字号</div>
+
+        <div class="fields ml6 bg02 btn-group">
+
+            <div class="box_left box75 ">
+
+                <input name="myInput3"  data-value="16"  value="16"  readonly="readonly" class="default width75" id="fontsa3">
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+
+                </ul>
+
+
+
+                <!--<i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>-->
+
+
+            </div>
+
+        </div>
+        <!--字号-->
+        <div class=" ml16 mt45  btn-group">颜色</div>
+        <div class=" ml5 mt45 colors btn-group">
+            <div id="colorPicker3">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div class="font-g" id="operation3">
+
+
+            <div class="picture mainb ml100 mt10 picture-d" id="show3" style="width: 700px;height:400px;"></div>
+            <table id="table_show3"></table>
+        </div>
+
+
+    </div>
+
+
+    <!-- 分屏4-->
+    <div class="clear" id="styleSingled">
+
+        <div class="fields ml45 revisewWidth btn-group">
+
+
+            <div class="box ">
+
+                <input readonly="readonly" data-value="192.16.32.10" value="主机分布"  type="text"  name="myInput4" class="default revise" >
+                <ul class="ul_change" id="master4">
+                    <li data-value="192.16.32.1">192.16.32.10</li>
+                </ul>
+
+
+
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+        </div>
+        <!--主机分布-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="cpu" value="CPU"  name="myInput4" id="ms4" class="default">
+                <ul>
+                    <li data-value="cpu">CPU</li>
+                    <li data-value="memory">内存</li>
+                    <li data-value="disk">磁盘</li>
+                    <li data-value="net">网络流量</li>
+                    <li data-value="1">终端信息</li>
+                    <li data-value="2">系统基础</li>
+                    <li data-value="3">网络连接</li>
+                    <li data-value="4">文件操作</li>
+                    <li data-value="5">应用进程</li>
+                    <li data-value="6">web应用</li>
+                    <li data-value="7">邮件行为</li>
+                    <li data-value="8">文件传输</li>
+                    <li data-value="9">网卡信息</li>
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa " aria-hidden="true"></i>
+            </div>
+
+        </div>
+        <!--数据类型-->
+        <div class="fields ml18 bg01 btn-group">
+
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="line" value="折线图"  name="myInput4" class="default " id="changepicturea4">
+                <ul>
+                    <li data-value="line">折线图</li>
+                    <li data-value="bar">柱形图</li>
+                    <li data-value="pie">饼形图</li>
+                    <li data-value="monitor">监控</li>
+                    <li data-value="form">表格</li>
+
+
+                </ul>
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+
+
+        </div>
+        <!--样式-->
+        <div class="fields ml18 bg01 btn-group">
+
+            <div class="box_left ">
+
+                <input readonly="readonly" data-value="Arial" value="宋体" name="myInput4" class="default " id="changeFonta4">
+
+
+                    <!--<option value="C1">字体 </option>-->
+                <ul>
+                    <li data-value="Arial">宋体</li>
+                    <li data-value="YaHei">微软雅黑</li>
+                    <li data-value="SimHei">黑体</li>
+                </ul>
+
+
+                <i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>
+
+            </div>
+        </div>
+        <!--字体-->
+        <!--<div class=" ml14 mt45  btn-group">行高</div>-->
+
+
+        <!--行高-->
+        <div class=" ml14 mt45  btn-group">字号</div>
+
+        <div class="fields ml6 bg02 btn-group">
+
+            <div class="box_left box75 ">
+
+                <input readonly="readonly" data-value="16"  value="16" name="myInput4" class="default width75" id="fontsa4">
+
+                <ul>
+                    <li data-value="16">16</li>
+                    <li data-value="20">20</li>
+                    <li data-value="24">24</li>
+                    <li data-value="28">28</li>
+                    <li data-value="32">32</li>
+
+
+                </ul>
+
+                <!--<i class="fa fa-angle-down fa-lg dkfa" aria-hidden="true"></i>-->
+
+
+            </div>
+
+        </div>
+        <!--字号-->
+        <div class=" ml16 mt45  btn-group">颜色</div>
+        <div class=" ml5 mt45 colors btn-group">
+            <div id="colorPicker4">
+                <div></div>
+            </div>
+        </div>
+
+
+        <div class="font-g" id="operation4">
+
+            <div class="picture mainb ml100 mt10 picture-d" id="show4" style="width: 700px;height:400px;"></div>
+            <table id="table_show4"></table>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+
+<script src="js/jquery.colorpicker.min.js"></script>
+
+<script src="js/jquery.colorpicker.min.js"></script>
+<script src="js/echarts.js"></script>
+
+<script src="js/show.js"></script>
+<script src="js/data.js"></script>
+
+
+<script>
+
+
+
+
+
+    /*
+     * 切换颜色*/
+    $('#colorPicker1').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker1 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show1.color="#"+hex;
+            var show_Chart =map_chart[show1.ElementId];
+            onLoad(show1,show_Chart)
+        }
+    });
+    $('#colorPicker2').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker2 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show2.color="#"+hex;
+            var show_Chart =map_chart[show2.ElementId];
+            onLoad(show2,show_Chart)
+        }
+    });
+    $('#colorPicker3').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker3 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show3.color="#"+hex;
+            var show_Chart =map_chart[show3.ElementId];
+            onLoad(show3,show_Chart)
+        }
+    });
+    $('#colorPicker4').ColorPicker({
+        color: '#0000ff',
+        onShow: function (colpkr) {
+            $(colpkr).fadeIn(500);
+            return false;
+        },
+        onHide: function (colpkr) {
+            $(colpkr).fadeOut(500);
+            return false;
+        },
+        onChange: function (hsb, hex, rgb) {
+            $('#colorPicker4 div').css('backgroundColor', '#' + hex);
+            /*$('#charts div').css('backgroundColor', '#' + hex);*/
+            show4.color="#"+hex;
+            var show_Chart =map_chart[show4.ElementId];
+            onLoad(show4,show_Chart)
+        }
+    });
+
+
+
+    //初始化参数
+    var show1=new MyParameter();
+    show1.ElementId='show1';  //设置展示模块的ID
+    show1.ip="192.168.2.1";
+    show1.dataType = "cpu";//cpu,memory,disk
+    show1.showType = "line";//line,bar,pie
+    show1.fontFamily = "Arial";
+    show1.fontSize= "20";
+    show1.color="#FFFFFF";
+
+
+
+    //初始化参数
+    var show2=new MyParameter();
+    show2.ElementId='show2';  //设置展示模块的ID
+    show2.ip="192.168.32.1";
+    show2.dataType = "cpu";//cpu,memory,disk
+    show2.showType = "line";//line,bar,pie
+    show2.fontFamily = "Arial";
+    show2.fontSize= "20";
+    show2.color="#FFFFFF";
+
+    //初始化参数
+    var show3=new MyParameter();
+    show3.ElementId='show3';  //设置展示模块的ID
+    show3.ip="192.168.32.1";
+    show3.dataType = "cpu";//cpu,memory,disk
+    show3.showType = "line";//line,bar,pie
+    show3.fontFamily = "Arial";
+    show3.fontSize= "20";
+    show3.color="#FFFFFF";
+
+    //初始化参数
+    var show4=new MyParameter();
+    show4.ElementId='show4';  //设置展示模块的ID
+    show4.ip="192.168.32.1";
+    show4.dataType = "cpu";//cpu,memory,disk
+    show4.showType = "line";//line,bar,pie
+    show4.fontFamily = "Arial";
+    show4.fontSize= "20";
+    show4.color="#FFFFFF";
+
+
+    //数据加载
+    getSetServer (["master1","master2","master3","master4"]);
+    //获取第一个IP
+    show1.ip=$("#master1 li:first").attr("data-value");
+    show2.ip=$("#master2 li:first").attr("data-value");
+    show3.ip=$("#master3 li:first").attr("data-value");
+    show4.ip=$("#master4 li:first").attr("data-value");
+
+
+
+    if(show1.ip){
+        loadChart(show1);
+    }
+
+    if(show2.ip){
+        loadChart(show2);
+    }
+    if(show3.ip){
+        loadChart(show3);
+    }
+    if(show4.ip){
+        loadChart(show4);
+    }
+
+
+
+    var table={};
+    table["height"]=360;
+    table["pagination"]=false;
+    table["search"]=true;
+    table["showColumns"]=true;
+    table["showRefresh"]=true;
+    table["showExport"]=true;
+
+
+
+
+
+    ///每次获取值
+
+    var compaer_a
+    function compare() {
+
+        compaer_a=[];
+        $("#styleSinglea  input[name=myInput1]").each(function () {
+
+            var ary_a= ($(this).attr("data-value"))
+
+            compaer_a.push(ary_a)
+
+        });
+
+        console.log(compaer_a)
+
+    }
+    compare()
+
+    var compaer_b
+
+    function compareb() {
+        compaer_b=[];
+
+        $("#styleSingleb  input[name=myInput2]").each(function () {
+
+            var ary_b= ($(this).attr("data-value"))
+
+            compaer_b.push(ary_b)
+
+        });
+
+        console.log(compaer_b)
+    }
+    compareb()
+
+
+
+    var compaer_c
+
+    function comparec() {
+        compaer_c=[];
+
+        $("#styleSinglec  input[name=myInput3]").each(function () {
+
+            var ary_c= ($(this).attr("data-value"))
+
+            compaer_c.push(ary_c)
+
+        });
+
+        console.log(compaer_c)
+    }
+    comparec()
+
+
+    function compared() {
+        compaer_d=[];
+
+        $("#styleSingled  input[name=myInput4]").each(function () {
+
+            var ary_d= ($(this).attr("data-value"))
+
+            compaer_d.push(ary_d)
+
+        });
+
+        console.log(compaer_d)
+    }
+    compared()
+
+
+
+
+    //模块1的操作
+
+    function sele(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))
+
+                    ){
+
+                        alert("此IP地址已经被占有");
+
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model1()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele("styleSinglea .box")
+    sele("styleSinglea .box_left")
+
+
+    function model1(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput1]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+//        console.log(options)
+        var index = $("input[name=myInput1]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+//        console.log($("input[name=myInput1]").length)
+//        console.log($("input[name=myInput1]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show1.ip = arr[0];
+        console.log( show1.ip);
+        show1.dataType = arr[1];//cpu,memory,disk
+        show1.showType = arr[2];//line,bar,pie
+        show1.fontFamily = arr[3];
+        show1.fontSize = arr[4];
+        show1.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show1, table);
+    }
+
+
+
+
+    function sele2(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model2()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele2("styleSingleb .box")
+    sele2("styleSingleb .box_left")
+
+
+    function model2(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput2]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+//        console.log(options)
+        var index = $("input[name=myInput2]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+//        console.log($("input[name=myInput2]").length)
+//        console.log($("input[name=myInput2]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show2.ip = arr[0];
+        console.log( show1.ip);
+        show2.dataType = arr[1];//cpu,memory,disk
+        show2.showType = arr[2];//line,bar,pie
+        show2.fontFamily = arr[3];
+        show2.fontSize = arr[4];
+        show2.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show2, table);
+    }
+
+
+    function sele3(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value",  parseInt(Math.random()*50))
+                        return
+                    }
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model3()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele3("styleSinglec .box")
+    sele3("styleSinglec .box_left")
+
+
+    function model3(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput3]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+//        console.log(options)
+        var index = $("input[name=myInput3]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+//        console.log($("input[name=myInput3]").length)
+//        console.log($("input[name=myInput3]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show3.ip = arr[0];
+        console.log( show1.ip);
+        show3.dataType = arr[1];//cpu,memory,disk
+        show3.showType = arr[2];//line,bar,pie
+        show3.fontFamily = arr[3];
+        show3.fontSize = arr[4];
+        show3.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show3, table);
+    }
+
+
+
+    function sele4(ele) {
+
+        $("#" + ele + "").bind({
+            "mouseenter": function () {
+                $(this).find("ul").show()
+                $(this).find("li").show()
+            },
+            "mouseleave": function () {
+
+                $(this).find("ul").hide()
+            },
+            "click": function (event) {
+                if (event.target.tagName == "LI") {
+
+
+                    var changr_numder=$(event.target).attr("data-value")
+                    $(this).find("input").attr("data-value",changr_numder)
+
+                    compare()
+
+                    compareb()
+                    comparec()
+                    compared()
+
+                    if (((compaer_a[0]===compaer_b[0])&&(compaer_a[2]===compaer_b[2])&&(compaer_d[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_c[0])&&(compaer_a[2]===compaer_c[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_a[0]===compaer_d[0])&&(compaer_a[2]===compaer_d[2])&&(compaer_a[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_c[0])&&(compaer_b[2]===compaer_c[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_b[0]===compaer_d[0])&&(compaer_b[2]===compaer_d[2])&&(compaer_b[2]==="monitor"))||
+                            ((compaer_c[0]===compaer_d[0])&&(compaer_c[2]===compaer_d[2])&&(compaer_c[2]==="monitor"))
+
+                    ){
+
+
+                        alert("此IP地址已经被占有");
+                        $(this).find("input").attr("data-value", parseInt(Math.random()*50))
+                        return
+                    }
+
+                    $(this).find("input").val($(event.target).text()); //传具体的文字
+
+
+
+                }
+                $(this).find("ul").hide();
+
+
+
+
+
+                model4()
+
+
+
+
+
+
+
+
+
+
+
+            }
+        })
+    }
+    sele4("styleSingled .box")
+    sele4("styleSingled .box_left")
+
+
+    function model4(){
+        ///模块1
+        var options=[]
+        $("input[name=myInput4]").each(function () {
+
+            var bb= ($(this).attr("data-value"))
+//            console.log(bb)
+            options.push(bb)
+
+        });
+
+//        console.log(options)
+        var index = $("input[name=myInput4]").length;
+
+//        var options = $("input[name=myInput]").attr("data-value");
+//        console.log($("input[name=myInput4]").length)
+//        console.log($("input[name=myInput4]").attr("data-value"))
+        // var e = e.target.value;
+        var arr = [];
+        for (var i = 0; i < index; i++) {
+            var aaa = options[i];
+
+
+
+            arr.push(aaa);
+        }
+        console.log(arr);
+
+        //判断arr里面的值为空
+
+        show4.ip = arr[0];
+        console.log( show1.ip);
+        show4.dataType = arr[1];//cpu,memory,disk
+        show4.showType = arr[2];//line,bar,pie
+        show4.fontFamily = arr[3];
+        show4.fontSize = arr[4];
+        show4.vdaip = arr[5];//vda需要的内网ip
+        onclickLoad(show4, table);
+    }
+
+
+
+</script>
+
+</html>

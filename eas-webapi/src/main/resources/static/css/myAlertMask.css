@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*弹窗的样式*/
+.myAlertMask{
+	position: fixed;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;
+}
+
+/*提示弹窗样式*/
+.myAlertMaskCon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -185px;
+    margin-top: -95px;
+    width: 370px;
+    height: 190px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #86bccd;
+    -moz-box-shadow: 0 1px 15px 1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 15px 1px rgba(0,0,0,0.6);
+    box-shadow: 0 1px 15px 1px rgba(0,0,0,0.6);
+}
+.myAlertContent{
+    height: 84px;
+    margin-top: 25px;
+    font-size: 14px;
+    padding-left: 27px;
+}
+.myAlertContent img{
+    float:left;
+}
+.myAlertContent span{
+    float: left;
+    width: 280px;
+    margin-left: 10px;
+}
+.myAlertBo{
+    height: 28px;
+    text-align: right;
+    margin-right: 30px;
+}
+.myAlertMask-content a,.myAlertBo a {
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    color: #505050;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.myAlertBo a:hover{
+    color:#fff;
+    background:#5d88ae;
+    border:1px solid #4876a2;
+}
+
+
+
+

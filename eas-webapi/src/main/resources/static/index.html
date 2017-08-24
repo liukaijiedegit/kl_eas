@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>长城网际分析系统</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/myAlertMask.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/sockjs.min.js"></script>
+    <script src="js/stomp.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/myAlertMask.js"></script>
+    <!--滚动条-->
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/mScroll.js"></script>
+
+</head>
+<body>
+<div class="index">
+    <div class="title">
+        <b></b>
+        <div>长城网际分析系统</div>
+        <!--<a href="#">退出</a>-->
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul class="tabs">
+                <li class="selected" id="souceLi">数据源</li>
+                <li id="ruleLi">规则</li>
+                <li id="eventLi">事件</li>
+                <!--<li>项目</li>-->
+            </ul>
+        </div>
+        <div class="right">
+            <!--数据源-->
+            <div class="item">
+                <div class="head">
+                    <span>当前位置</span> > <a href="#">数据源</a>
+                </div>
+                <div class="arc">
+                    <form id="UploadForm" method="post" enctype="multipart/form-data">
+                        <div class="file-uploader-wrap">　　
+                            <span>导入数据格式</span>　　　　
+                            　　　<input type="text" id="PathDisplayer" class="input-text"disabled />
+                            <input type="file" class="file-uploader" id="FileUploader"/>
+                            　　　<a href="javascript:void(0)" class="link-btn" >浏览...</a>
+                            <input type="button" value="添加" class="uploadBtn" id="addDataBtn">
+
+                        </div>
+                    </form>
+                    <!--列表-->
+                    <div class="testCase_content">
+
+                        <table align="center" cellpadding="0" cellspacing="0" class="common_tableTitle">
+                            <tbody>
+                            <tr>
+                                <th width="7%">序号</th>
+                                <th width="30%">数据源名称</th>
+                                <th width="30%">连接状态</th>
+                                <th width="30%" style="padding-left: 0.7%;">操作</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="testCase_contentForm">
+                            <table align="center" cellpadding="0" cellspacing="0" class="common_tableContent dataSource" id="dataSource">
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--规则-->
+            <div class="item">
+                <div class="head">
+                    <span>当前位置</span> > <a href="#">规则</a>
+                </div>
+                <div class="arc">
+                    <form id="UpForm" method="post" enctype="multipart/form-data">
+                        <div class="popText">
+                            <label for="names" class="name">规则名称</label>
+                            <input type="text" class="input" name="names" id="names">
+                            <label for="desc" class="desc">描述</label>
+                            <textarea name="desc" id="desc" style="resize:none"></textarea>
+                        </div>
+
+
+                        <div class="file-uploader-wrap">　　
+                            <span>导入规则</span>　　　　
+                            　　　<input type="text" id="Pathplayer" class="input-text"disabled />
+                            　　　<a href="javascript:void(0)" class="link-btn" >浏览...</a>
+                            <input type="file" class="file-uploader" name="uploadDataField" id="file"/>
+                            <input type="button" value="添加" class="uploadBtn" onclick="addRule()">
+
+                        </div>
+                    </form>
+                    <!--列表-->
+                    <div class="ruleCase_content">
+                        <table align="center" cellpadding="0" cellspacing="0" class="common_tableTitle">
+                            <tbody>
+                            <tr>
+                                <th width="7%">序号</th>
+                                <th width="30%">规则</th>
+                                <th width="30%">描述</th>
+                                <th width="30%">操作</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="testCase_contentForm">
+                            <table align="center" cellpadding="0" cellspacing="0" class="common_tableContent rulesTable" id="ruleTable2">
+                                <tbody>
+                                <!--<tr>
+                                    <td width="7%">1</td>
+                                    <td width="30%">规则规则</td>
+                                    <td width="30%">123456</td>
+                                    <td width="30%"><a href="#" class="delete" onclick="cutRule()">删除</a></td>
+                                </tr>-->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--事件-->
+            <div class="item">
+                <div class="head">
+                    <span>当前位置</span> > <a href="#">事件</a>
+                </div>
+                <div class="article">
+                    <div class="btn">
+                        <button class="loadBtn newBtn">新建</button>
+                        <!--新建弹窗-->
+                        <div class="mask" id="mask1">
+                            <div class="maskBox">
+                                <div>
+                                    <div class="maskBar"><span>新建</span></div>
+                                    <div class="maskContent">
+                                        <form>
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        <label>事件名称：</label>
+                                                        <input type="text" class="eventName" id='eventName'>
+                                                    </p>
+                                                    <p style="margin-left:87px;">
+                                                        <label>类型：</label>
+                                                        <select name="" id="eventType">
+                                                            <option value="1">主机</option>
+                                                            <option value="2">网络</option>
+                                                        </select>
+                                                        <span class="tri angle"><b></b></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p style="margin-left:12px;">
+                                                        <label>数据源：</label>
+                                                        <select name="" id="data_re">
+
+                                                        </select>
+                                                        <span class="tri angle1"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left:75px;">
+                                                        <label>数据项：</label>
+                                                        <select name="" id="data_item">
+
+                                                        </select>
+                                                        <span class="tri angle2"><b></b></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p style="margin-left:24px;">
+                                                        <label>描述：</label>
+                                                        <textarea name="" id='eventDes' style="resize:none"></textarea>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p style="margin-left:20px;" class="fromSelection ifzhuji">
+                                                        <label>from：</label>
+                                                        <select id="editFrom" class='fromAndTo' name="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle3"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left:20px;" class="fromSelection ifzhuji">
+                                                        <!--<label>from：</label>-->
+                                                        <select id="editFrom2" class='fromAndTo' name="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle3"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left:99px;">
+                                                        <label>to：</label>
+                                                        <select id="editTo" class='fromAndTo' name="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle4"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left:20px;">
+                                                        <!--<label>to：</label>-->
+                                                        <select id="editTo2" class='fromAndTo' name="">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle4"><b></b></span>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <label>输出信息：</label>
+                                                    <input type="text" class="export" id='eventExport'>
+                                                </li>
+                                                <li class="event">
+                                                    <p style="margin-left: 24px;">
+                                                        <label>字段：</label>
+                                                        <select id='eventfields' name="" style="width:110px;">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle5"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left: 24px;">
+                                                        <!--<label>字段：</label>-->
+                                                        <select id='eventfields2' name="" style="width:110px;">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle5"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left: 28px;">
+                                                        <label>规则：</label>
+                                                        <select id='eventRules' name="" style="width:110px;">
+                                                            <!--<option value=""></option>-->
+                                                        </select>
+                                                        <span class="tri angle6"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left: 28px;" class='eventChoice'>
+                                                        <label>条件值：</label>
+                                                        <select id='eventSelectChoice' name="" style="width:124px;">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <span class="tri angle7"><b></b></span>
+                                                    </p>
+                                                    <p style="margin-left: 28px;"  class="condation eventChoice">
+                                                        <label>条件值：</label>
+                                                        <input type="text" id='eventInputChoice'>
+                                                    </p>
+                                                    <p>
+                                                        <a href="#" class="add" onClick="add()"></a>
+                                                        <!--<a href="#" class="minus" onClick="minus()"></a>-->
+                                                    </p>
+                                                </li>
+                                                <div style="height: 220px; overflow-y: auto;">
+                                                    <table class="ruleTable" id="ruleTable">
+                                                        <tbody>
+                                                        <!--动态加载的-->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="maskBottom">
+                                        <button class="sure submit" onclick="addEvent()" >确定</button>
+                                        <button class="cansole">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="loadBtn editBtn" id="editBtn">修改</button>
+                        <!--修改弹窗-->
+
+                        <button class="loadBtn cutBtn">删除</button>
+                        <!--删除弹窗-->
+                        <div class="mask" id="mask3">
+                            <div class="maskBox" id="box3">
+                                <div>
+                                    <div class="maskBar" id="bar3">
+                                        <span>提示</span>
+                                    </div>
+                                    <div class="delmaskContent">
+                                        <b></b><span>确定要删除此信息？</span>
+                                    </div>
+                                    <div class="maskBottom maskBoxBottom">
+                                        <button class="sure" id="deleteEvent">确定</button>
+                                        <button class="call">取消</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="loadBtn expBtn"  onClick="exports()">导出</button>
+                    </div>
+                    <div class="eventCase_content">
+                        <table align="center" cellpadding="0" cellspacing="0" class="common_tableTitle event_tableTitle">
+                            <tbody>
+                            <tr>
+                                <th width="6%" class="table_checkbox"><label name="items"></label><span>序号</span></th>
+                                <th width="11%">事件名称</th>
+                                <th width="11%">事件编号</th>
+                                <th width="11%">类型</th>
+                                <th width="11%">数据源</th>
+                                <th width="11%">数据项</th>
+                                <th width="11%">from/to</th>
+                                <th width="17%">匹配规则</th>
+                                <th width="11%">输出信息</th>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="testCase_contentForm">
+                            <table align="center" cellpadding="0" cellspacing="0" class="common_tableContent event_tableContent">
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--项目-->
+            <!--<div class="item">
+                <div class="head">
+                    <span>当前位置</span> > <a href="#">项目</a>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+</div>
+
+<script>
+    /*tab标签切换*/
+    $('.tabs li').click(function(){
+        var i = $(this).index();
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.right .item').eq(i).show().siblings().hide();
+    })
+
+    /*事件列表中的勾选框选中*/
+    $(".event_tableContent").delegate('tr','click',function(){
+        var input = $(this).find("label");//获取checkbox
+        //判断当前checkbox是否为选中状态
+        if(input.hasClass('BOXselected')){
+            input.removeClass("BOXselected");
+        }else{
+            input.addClass("BOXselected");
+        }
+    })
+    /*全选按钮*/
+    $(".event_tableTitle tr").click(function(){
+        var label = $(this).find('label');
+        if(label.hasClass('BOXselected')){
+            label.removeClass("BOXselected");
+            $(".eventCase_content label").removeClass('BOXselected');
+        }else{
+            label.addClass("BOXselected");
+            $(".eventCase_content label").addClass('BOXselected');
+        }
+    })
+
+    /*新建弹窗显示*/
+    $('.newBtn').click(function(){
+        $('.maskBar span').text('新建');
+        $(".submit").removeAttr('data-id');
+        reset();
+        $("#mask1").show();
+    })
+    /*点击取消按钮*/
+    $('.cansole').click(function(){
+        $('#mask1').hide();
+    })
+
+    /*删除弹窗显示*/
+    /*$('.cutBtn').click(function(){
+        $('#mask3').show();
+    })*/
+    $('.call').click(function(){
+        $('#mask3').hide();
+    })
+</script>
+</body>
+</html>

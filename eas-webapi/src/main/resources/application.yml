@@ -1,0 +1,51 @@
+spring:
+  content:
+    ansi:
+      enabled: always
+#  数据库配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.10.104:3306/kl_eas?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+# 自动创建表
+      ddl-auto: none
+    show-sql: true
+# 开发阶段，开启debug模式
+debug: false
+trace: false
+# 日志输出到path目录下的spring.log文件
+logging:
+  path: eas-webapi\src\main\resources\logs
+# spring boot内置tomcat
+server:
+  port: 8081
+  context-path: /kl_eas
+# RabbitMQ 配置
+rabbitConfig:
+  eas-exchange-name: kl-eas-exchange-name
+  virtual-host: /
+  host: 10.10.10.103
+  port: 5672
+  username: admin
+  password: admin123456
+
+queueConfig:
+  command-exchange: kl-exchange-command
+  command-queue: kl-queue-command
+  command-routing:
+  data-exchange: kl-exchange-data
+  data-queue: kl-quque-data
+  data-routing:
+  heart-beat-exchange: kl-exchange-heartbeat
+  heart-beat-queue: kl-quque-heartbeat
+  heart-beat-routing:
+
+
+ruleConfig:
+  jar-path: /rule/
+  package-name: cn.kl.rule.
+
+
